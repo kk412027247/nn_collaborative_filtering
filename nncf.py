@@ -95,3 +95,8 @@ plt.xlabel("Epoch Number")
 plt.ylabel("Loss Magnidute")
 plt.plot(history.history['loss'])
 plt.show()
+
+print('user: ', X_test[:10, 0], 'movie: ', X_test[:10, 1])
+print('rate: ', y_test[:10])
+
+print('predict: ', model.predict([X_test[:10, 0], X_test[:10, 1]]))
