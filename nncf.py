@@ -11,7 +11,7 @@ from tensorflow.keras.regularizers import l2
 PATH = './ml-latest-small/'
 
 ratings = pd.read_csv(PATH + 'ratings.csv')
-print(ratings.head())
+print(ratings[:15])
 
 movies = pd.read_csv(PATH + 'movies.csv')
 print(movies.head())
